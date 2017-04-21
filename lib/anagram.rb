@@ -10,14 +10,32 @@ class String
     end
   end
 
-  class String
-    define_method(:is_case_sensitive?) do
-      first_word = self.downcase().delete(' ')
-      second_word = first_word
-      if second_word == first_word
-        true
-      else
-       false
-      end
+class String
+  define_method(:is_case_sensitive?) do
+    first_word = self.downcase().delete(' ')
+    second_word = first_word
+    if second_word == first_word
+      true
+    else
+     false
     end
   end
+end
+#
+# class String
+#   define_method(:is_palindrome?) do
+#     first_word = self.delete(' ')
+#     second_word = first_word.split("")
+#     reverse_array = []
+#     while second_word.length > 0 do
+#       letter = second_word.pop()
+#       reverse_array.push(letter)
+#     end
+#     first_word = reverse_array.join()
+#     if second_word == first_word
+#       "These words are palindromes!"
+#     else
+#      false
+#       end
+#     end
+#   end

@@ -1,6 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
-require('./lib/rock_paper_scissor')
+require('./lib/anagram')
 also_reload('lib/**/*.rb')
 
 get('/') do
@@ -8,6 +8,6 @@ get('/') do
 end
 
 get('/result') do
-  @result = params.fetch('#nameofform').anagram(params.fetch('#nameofform'))
+  @result = params.fetch('#anagram').anagram(params.fetch('#anagram2'))
   erb(:result)
 end
