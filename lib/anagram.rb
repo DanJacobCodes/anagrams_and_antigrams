@@ -10,12 +10,21 @@ class String
       "These words are anagrams!"
   elsif first_word != second_word
   "These words are not anagrams!"
-elsif a == reverse_first_word
-  "This word is also a palindrome!"
-elsif b == b.reverse
-  "This word is also a palindrome!"
-
-
-      end
     end
   end
+end
+
+define_method(:palindrome) do |word2|
+   first_word = self
+   second_word = word2
+   a = first_word.downcase
+   b = second_word.downcase
+
+ if a.reverse == b.reverse
+   "This word is also a palindrome!"
+   elsif a.reverse != b.reverse
+   "This word is not a palindrome"
+
+end
+end
+"radar".palindrome("nadar")
