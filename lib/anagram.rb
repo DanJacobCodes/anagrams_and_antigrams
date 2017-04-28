@@ -19,12 +19,10 @@ define_method(:palindrome) do |word2|
    second_word = word2
    a = first_word.downcase
    b = second_word.downcase
-
  if a.reverse == b.reverse
    "This word is also a palindrome!"
    elsif a.reverse != b.reverse
    "This word is not a palindrome"
-
-end
-end
+    end
+  end
 "radar".palindrome("nadar")

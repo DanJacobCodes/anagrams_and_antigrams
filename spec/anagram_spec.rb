@@ -8,7 +8,10 @@ describe('String#anagram') do
   it('checks for random capitalizations when comparing two user inputs') do
     expect(("ruby").anagram('buRY')).to(eq("These words are anagrams!"))
   end
-  it('checks if input one is also a palindrome') do
+  it('checks if input is also a palindrome') do
     expect(("ana").palindrome("ana")).to(eq("This word is also a palindrome!"))
+  end
+  it('checks if input is an actual word') do
+    expect(("").palindrome("")).to(eq("))
   end
 end
