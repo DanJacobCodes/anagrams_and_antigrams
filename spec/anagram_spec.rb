@@ -12,6 +12,6 @@ describe('String#anagram') do
     expect(("ana").palindrome("ana")).to(eq("This word is also a palindrome!"))
   end
   it('checks if input is an actual word') do
-    expect(("").palindrome("")).to(eq("))
+    expect(("mp").actual_word()).to(eq(false))
   end
 end
