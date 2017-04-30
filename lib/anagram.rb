@@ -8,8 +8,10 @@ class String
     reverse__second_word = b.reverse
     if a.chars.sort == b.chars.sort && a.chars.sort.length == b.chars.sort.length
       "These words are anagrams!"
-  elsif first_word != second_word
+  elsif a.chars.sort != b.chars.sort && a.chars.sort.length == b.chars.sort.length
   "These words are not anagrams!"
+else a.chars.sort != b.chars.sort
+  "Antigram!! None of these letters match"
     end
   end
 end

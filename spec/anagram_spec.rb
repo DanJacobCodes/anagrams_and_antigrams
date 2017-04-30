@@ -14,4 +14,7 @@ describe('String#anagram') do
   it('checks if input is an actual word') do
     expect(("mp").actual_word()).to(eq(false))
   end
+  it('checks if inputs are antigram') do
+    expect(("yes").anagram("no")).to(eq("Antigram!! None of these letters match"))
+  end
 end
