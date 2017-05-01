@@ -9,16 +9,23 @@
 
 
 ## Specs
-*
-  *
-
-
+Specs| Input | Output |
+--------|--------|--------|
+|Users will able to see if their inputs are anagrams| "ruby" "bury" | "These words are anagrams!"|
+|Users will be able to see if their inputs are antigrams | "a" "b"| "Antigram!!"|
+|Users will be prompted to input actual words | "." | "Please enter a real world"|
+|Users will be prompted to see if their words are palindromes | "radar" | "This word is also a palindrome!"|
 
 
 
 ## Setup/Installation Requirements
 
 * Download or clone this repository to your desktop
+* Change into this project directory
+* Make sure you have the required gems installed by running 'bundle install' in the terminal
+* Once all gems are installed, run 'ruby app.rb' in the terminal
+* You should see Sinatra (v1.4.8) has taken the stage on 4567 for development with backup from WEBrick in th terminal
+* Open your preferred browser and navigate to localhost:4567 to view the webpage
 
 ## Support and contact details
 
